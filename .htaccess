@@ -1,0 +1,8 @@
+# Serve directory index.html files without exposing .html, and 404 fallback
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# Force no trailing "index.html" in the address bar
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /index\.html[\s?] [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]

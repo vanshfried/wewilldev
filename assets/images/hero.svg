@@ -1,0 +1,31 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Idea to product">
+    <rect width="900" height="700" fill="#F3F2ED"/>
+    <line x1="0" y1="0" x2="0" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="60" y1="0" x2="60" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="120" y1="0" x2="120" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="180" y1="0" x2="180" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="240" y1="0" x2="240" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="300" y1="0" x2="300" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="360" y1="0" x2="360" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="420" y1="0" x2="420" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="480" y1="0" x2="480" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="540" y1="0" x2="540" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="600" y1="0" x2="600" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="660" y1="0" x2="660" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="720" y1="0" x2="720" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="780" y1="0" x2="780" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="840" y1="0" x2="840" y2="700" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="0" x2="900" y2="0" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="60" x2="900" y2="60" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="120" x2="900" y2="120" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="180" x2="900" y2="180" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="240" x2="900" y2="240" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="300" x2="900" y2="300" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="360" x2="900" y2="360" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="420" x2="900" y2="420" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="480" x2="900" y2="480" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="540" x2="900" y2="540" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="600" x2="900" y2="600" stroke="rgba(23,23,21,0.14)" stroke-width="1"/><line x1="0" y1="660" x2="900" y2="660" stroke="rgba(23,23,21,0.14)" stroke-width="1"/>
+    
+<rect x="120" y="150" width="520" height="340" rx="12" fill="#EAE8DF" opacity="1" stroke="#171715" stroke-width="1.5"/>
+<rect x="150" y="180" width="460" height="40" rx="4" fill="#171715" opacity="0.06" />
+<rect x="150" y="240" width="220" height="60" rx="6" fill="#91A83D" opacity="0.25" />
+<rect x="390" y="240" width="220" height="60" rx="6" fill="#171715" opacity="0.06" />
+<rect x="150" y="320" width="460" height="140" rx="6" fill="#171715" opacity="0.04" />
+<line x1="170" y1="360" x2="590" y2="360" stroke="#171715" stroke-width="1" opacity="0.15"/>
+<line x1="170" y1="400" x2="500" y2="400" stroke="#171715" stroke-width="1" opacity="0.15"/>
+<line x1="170" y1="440" x2="540" y2="440" stroke="#91A83D" stroke-width="2" opacity="0.6"/>
+<rect x="600" y="120" width="170" height="400" rx="26" fill="#171715" opacity="1" />
+<rect x="614" y="150" width="142" height="340" rx="4" fill="#F3F2ED" opacity="1" />
+<rect x="624" y="170" width="122" height="70" rx="6" fill="#91A83D" opacity="0.85" />
+<rect x="624" y="255" width="122" height="20" rx="3" fill="#171715" opacity="0.12" />
+<rect x="624" y="285" width="80" height="20" rx="3" fill="#171715" opacity="0.12" />
+<rect x="624" y="320" width="122" height="90" rx="6" fill="#171715" opacity="0.06" />
+
+    
+    <path d="M0,22 V0 H22" stroke="#91A83D" stroke-width="2" fill="none"/>
+    <path d="M878,0 H900 V22" stroke="#91A83D" stroke-width="2" fill="none"/>
+    <path d="M900,678 V700 H878" stroke="#91A83D" stroke-width="2" fill="none"/>
+    <path d="M22,700 H0 V678" stroke="#91A83D" stroke-width="2" fill="none"/>
+    
+    
+    <text x="32" y="46" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="2" fill="#55564E">COMPOSITION / 01</text>
+    <text x="32" y="670" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="600" fill="#171715">Idea to product</text>
+    <circle cx="860" cy="666" r="4" fill="#91A83D"/>
+    
+    </svg>
