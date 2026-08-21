@@ -1,0 +1,624 @@
+/* ==========================================================================
+   WeWillDev — Mobile
+   Dedicated mobile layout
+   ========================================================================== */
+
+
+/* ==========================================================================
+   TABLET / SMALL LAPTOP
+   ========================================================================== */
+
+@media (max-width: 900px) {
+
+  .container {
+    padding-inline: 2rem;
+  }
+
+  .grid-12 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+}
+
+
+/* ==========================================================================
+   MOBILE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+  /* ------------------------------------------------------------------------
+     GLOBAL
+     ------------------------------------------------------------------------ */
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: none;
+    padding-inline: 20px;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     HEADER
+     ------------------------------------------------------------------------ */
+
+  .site-header .container {
+    height: 64px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-toggle {
+    width: 28px;
+    height: 28px;
+  }
+
+  .mobile-nav {
+    inset: 64px 0 0 0;
+    padding: 28px 20px;
+  }
+
+  .mobile-nav a {
+    font-size: 1.6rem;
+    padding: 14px 0;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     GRID
+     ------------------------------------------------------------------------ */
+
+  .grid-12 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /*
+     Your HTML uses inline grid-column values such as:
+
+     grid-column: 1/6;
+     grid-column: 6/13;
+     grid-column: span 6;
+
+     This overrides those values on mobile.
+  */
+
+  .grid-12 > * {
+    grid-column: 1 / -1 !important;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     SECTIONS
+     ------------------------------------------------------------------------ */
+
+  .section {
+    padding-block: 64px;
+  }
+
+  .section--tight {
+    padding-block: 48px;
+  }
+
+  .section--first {
+    padding-top: 48px;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     PAGE INTRO
+     ------------------------------------------------------------------------ */
+
+  .page-intro {
+    padding-block: 52px 42px;
+  }
+
+  .page-intro h1 {
+    max-width: none !important;
+    font-size: clamp(2.5rem, 11vw, 3.5rem) !important;
+    line-height: 0.98;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     HEADINGS
+     ------------------------------------------------------------------------ */
+
+  h1 {
+    font-size: clamp(2.5rem, 11vw, 3.5rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 9vw, 2.7rem);
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     BODY TEXT
+     ------------------------------------------------------------------------ */
+
+  .lede {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: none;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     SECTION HEAD
+     ------------------------------------------------------------------------ */
+
+  .section-head {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .section-head .lede {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     SERVICE CARDS
+     ------------------------------------------------------------------------ */
+
+  .service-card {
+    width: 100%;
+    padding: 22px;
+    gap: 16px;
+  }
+
+  .service-card:hover {
+    transform: none;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     PROJECT / WORK
+     ------------------------------------------------------------------------ */
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-block: 28px;
+  }
+
+  .project-card .media {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+
+  .project-card .meta {
+    gap: 14px;
+  }
+
+  .project-card h3 {
+    font-size: 2rem;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     IMAGES
+     ------------------------------------------------------------------------ */
+
+  .image-frame {
+    width: 100%;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     PROCESS
+     ------------------------------------------------------------------------ */
+
+  .process-step {
+    grid-template-columns: 52px 1fr;
+    gap: 16px;
+    padding-block: 24px;
+  }
+
+  .process-step .num {
+    font-size: 1.1rem;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     AUDIENCE
+     ------------------------------------------------------------------------ */
+
+  .audience-list {
+    gap: 8px;
+  }
+
+  .audience-chip {
+    padding: 9px 14px;
+    font-size: 0.8rem;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     CAPABILITY STRIP
+     ------------------------------------------------------------------------ */
+
+  .capability-strip .track {
+    font-size: 0.7rem;
+    padding-block: 10px;
+    gap: 24px;
+  }
+
+  .capability-strip .track span {
+    margin-right: 24px;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     BUTTONS
+     ------------------------------------------------------------------------ */
+
+  .btn {
+    min-height: 46px;
+    padding: 12px 18px;
+  }
+
+  /*
+     Don't make every button full width.
+     Only CTA groups get special treatment below.
+  */
+
+  .section--dark .btn {
+    justify-content: center;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     CTA BUTTON GROUPS
+     ------------------------------------------------------------------------ */
+
+  .section--dark .container > div[style*="display:flex"] {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section--dark .container > div[style*="display:flex"] .btn {
+    width: 100%;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     FOOTER
+     ------------------------------------------------------------------------ */
+
+  .site-footer {
+    padding-block: 56px 28px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-bottom: 40px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-brand p {
+    max-width: 38ch;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     CONTACT FORM
+     ------------------------------------------------------------------------ */
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     MOBILE NAV
+     ------------------------------------------------------------------------ */
+
+  body.nav-open {
+    overflow: hidden;
+  }
+
+}
+
+
+/* ==========================================================================
+   SMALL PHONES
+   ========================================================================== */
+
+@media (max-width: 480px) {
+
+  .container {
+    padding-inline: 16px;
+  }
+
+  .page-intro {
+    padding-block: 42px 34px;
+  }
+
+  .section {
+    padding-block: 52px;
+  }
+
+  .section--first {
+    padding-top: 40px;
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  .project-card h3 {
+    font-size: 1.75rem;
+  }
+
+  .process-step {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .footer-top {
+    gap: 30px;
+  }
+
+}
+
+
+/* ==========================================================================
+   MOBILE HEADER — FINAL
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: var(--bg);
+  }
+
+  .site-header .container {
+    height: 64px;
+    min-height: 64px;
+    padding-inline: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  /* LOGO */
+
+  .site-header .logo {
+    display: block;
+    font-size: 1rem;
+    line-height: 1;
+    position: relative;
+    z-index: 10001;
+  }
+
+
+  /* DESKTOP NAV OFF */
+
+  .site-header .main-nav {
+    display: none !important;
+  }
+
+
+  /* HAMBURGER */
+
+  .site-header .nav-toggle {
+    display: flex !important;
+
+    width: 34px;
+    height: 34px;
+
+    padding: 6px;
+    margin: 0;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+    background: transparent;
+    border: 0;
+
+    position: relative;
+    z-index: 10001;
+  }
+
+  .site-header .nav-toggle span {
+    display: block;
+
+    width: 21px;
+    height: 2px;
+
+    background: var(--ink);
+
+    transition:
+      transform 0.25s var(--ease),
+      opacity 0.2s var(--ease);
+  }
+
+
+  /* HAMBURGER → X */
+
+  body.nav-open .site-header .nav-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  body.nav-open .site-header .nav-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  body.nav-open .site-header .nav-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+
+  /* ------------------------------------------------------------------------
+     MOBILE MENU
+     ------------------------------------------------------------------------ */
+
+  .site-header .mobile-nav {
+
+    display: block !important;
+
+    position: fixed !important;
+
+    top: 64px !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    width: 100% !important;
+    height: calc(100dvh - 64px) !important;
+
+    padding: 24px 20px 32px !important;
+
+    background: var(--bg);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    z-index: 10000;
+
+    /* Kill any old animation/hidden state */
+    opacity: 0;
+    visibility: hidden;
+    transform: none !important;
+    pointer-events: none;
+
+    transition:
+      opacity 0.2s ease,
+      visibility 0.2s ease;
+  }
+
+
+  /* OPEN */
+
+  .site-header .mobile-nav.is-open {
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
+
+
+  /* MENU LIST */
+
+  .site-header .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* MENU ITEMS */
+
+  .site-header .mobile-nav li {
+    width: 100%;
+    border-bottom: 1px solid var(--line);
+  }
+
+
+  /* MENU LINKS */
+
+  .site-header .mobile-nav li a {
+    display: flex;
+
+    width: 100%;
+    min-height: 58px;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    color: var(--ink);
+
+    border: 0;
+  }
+
+
+  .site-header .mobile-nav li a.is-active {
+    color: var(--accent-dark);
+  }
+
+
+  /* PROJECT BUTTON */
+
+  .site-header .mobile-nav > .btn {
+    display: flex;
+
+    width: 100%;
+    min-height: 50px;
+
+    margin-top: 28px;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: var(--fs-small);
+  }
+
+
+  body.nav-open {
+    overflow: hidden;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 380px) {
+
+  .site-header .container {
+    padding-inline: 16px;
+  }
+
+  .site-header .mobile-nav {
+    padding-inline: 20px !important;
+  }
+
+  .site-header .mobile-nav li a {
+    font-size: 1.5rem;
+    min-height: 54px;
+  }
+}
