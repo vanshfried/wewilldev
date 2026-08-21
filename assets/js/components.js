@@ -3,21 +3,24 @@
    Pass the active nav key via <body data-nav="services"> etc. */
 
 function renderHeader() {
-  const active = document.body.getAttribute('data-nav') || '';
-  const isActive = (key) => (active === key ? 'is-active' : '');
+  const active = document.body.getAttribute("data-nav") || "";
+  const isActive = (key) => (active === key ? "is-active" : "");
 
   const navItems = [
-    ['services', '/services/', 'Services'],
-    ['work', '/work/', 'Work'],
-    ['process', '/process/', 'Process'],
-    ['about', '/about/', 'About'],
+    ["services", "/services/", "Services"],
+    ["work", "/work/", "Work"],
+    ["process", "/process/", "Process"],
+    ["about", "/about/", "About"],
   ];
 
   const navHtml = navItems
-    .map(([key, href, label]) => `<li><a href="${href}" class="${isActive(key)}">${label}</a></li>`)
-    .join('');
+    .map(
+      ([key, href, label]) =>
+        `<li><a href="${href}" class="${isActive(key)}">${label}</a></li>`,
+    )
+    .join("");
 
-  const header = document.getElementById('site-header');
+  const header = document.getElementById("site-header");
   if (!header) return;
 
   header.innerHTML = `
@@ -25,7 +28,9 @@ function renderHeader() {
       <a href="/" class="logo">wewilldev<span>.</span></a>
       <nav class="main-nav" aria-label="Primary">
         <ul>${navHtml}</ul>
-        <a href="/contact/" class="btn btn-primary">Start a project ↗</a>
+        <a href="https://wa.me/919149501021?text=Hi%20WeWillDev%2C%20I%27d%20like%20to%20discuss%20a%20project." class="btn btn-primary" target="_blank" rel="noopener">
+          Start a project ↗
+        </a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -33,28 +38,30 @@ function renderHeader() {
     </div>
     <div class="mobile-nav" id="mobileNav">
       <ul>${navHtml}</ul>
-      <a href="/contact/" class="btn btn-primary">Start a project ↗</a>
+      <a href="https://wa.me/919149501021?text=Hi%20WeWillDev%2C%20I%27d%20like%20to%20discuss%20a%20project." class="btn btn-primary" target="_blank" rel="noopener">
+        Start a project ↗
+      </a>
     </div>
   `;
 
-  const toggle = document.getElementById('navToggle');
-  const mobileNav = document.getElementById('mobileNav');
-  toggle.addEventListener('click', () => {
-    const open = mobileNav.classList.toggle('is-open');
-    document.body.classList.toggle('nav-open', open);
-    toggle.setAttribute('aria-expanded', String(open));
+  const toggle = document.getElementById("navToggle");
+  const mobileNav = document.getElementById("mobileNav");
+  toggle.addEventListener("click", () => {
+    const open = mobileNav.classList.toggle("is-open");
+    document.body.classList.toggle("nav-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
   });
-  mobileNav.querySelectorAll('a').forEach((a) =>
-    a.addEventListener('click', () => {
-      mobileNav.classList.remove('is-open');
-      document.body.classList.remove('nav-open');
-      toggle.setAttribute('aria-expanded', 'false');
-    })
+  mobileNav.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => {
+      mobileNav.classList.remove("is-open");
+      document.body.classList.remove("nav-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }),
   );
 }
 
 function renderFooter() {
-  const footer = document.getElementById('site-footer');
+  const footer = document.getElementById("site-footer");
   if (!footer) return;
   const year = new Date().getFullYear();
 
@@ -71,7 +78,7 @@ function renderFooter() {
             <li><a href="/about/">About</a></li>
             <li><a href="/work/">Work</a></li>
             <li><a href="/process/">Process</a></li>
-            <li><a href="/contact/">Contact</a></li>
+            <li><a href="https://wa.me/919149501021?text=Hi%20WeWillDev%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -100,7 +107,7 @@ function renderFooter() {
   `;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   renderHeader();
   renderFooter();
 });
