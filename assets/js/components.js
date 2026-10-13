@@ -60,6 +60,15 @@ function renderHeader() {
   );
 }
 
+function loadFonts() {
+  if (document.getElementById("site-fonts")) return;
+  const fonts = document.createElement("link");
+  fonts.id = "site-fonts";
+  fonts.rel = "stylesheet";
+  fonts.href = "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap";
+  document.head.appendChild(fonts);
+}
+
 function renderFooter() {
   const footer = document.getElementById("site-footer");
   if (!footer) return;
@@ -93,7 +102,7 @@ function renderFooter() {
         <div class="footer-col">
           <h4>Get in touch</h4>
           <ul>
-            <li><a href="mailto:wewilldev.connect@gmail.com">wewilldev.connect@gmail.com</a></li>
+            <li><a href="mailto:contact@wewilldev.com">contact@wewilldev.com</a></li>
             <li>Based in Jammu</li>
             <li>Serving businesses across India</li>
           </ul>
@@ -110,4 +119,9 @@ function renderFooter() {
 document.addEventListener("DOMContentLoaded", () => {
   renderHeader();
   renderFooter();
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(loadFonts, { timeout: 1500 });
+  } else {
+    window.setTimeout(loadFonts, 0);
+  }
 });
