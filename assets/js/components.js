@@ -73,7 +73,7 @@ function renderFooter() {
           <p>You bring the idea. We build the technology behind it — websites, apps, software, AI and the systems that keep them running.</p>
         </div>
         <div class="footer-col">
-          <h4>Studio</h4>
+          <p class="footer-heading">Studio</p>
           <ul>
             <li><a href="/about/">About</a></li>
             <li><a href="/work/">Work</a></li>
@@ -82,7 +82,7 @@ function renderFooter() {
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
+          <p class="footer-heading">Services</p>
           <ul>
             <li><a href="/services/web-development/">Web &amp; Software</a></li>
             <li><a href="/services/mobile-app-development/">Mobile &amp; Apps</a></li>
@@ -91,7 +91,7 @@ function renderFooter() {
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Get in touch</h4>
+          <p class="footer-heading">Get in touch</p>
           <ul>
             <li><a href="mailto:contact@wewilldev.com">contact@wewilldev.com</a></li>
             <li>Based in Jammu</li>

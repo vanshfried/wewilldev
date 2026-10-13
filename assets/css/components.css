@@ -441,7 +441,7 @@ body.nav-open {
   color: var(--ink-on-dark-soft);
   max-width: 32ch;
 }
-.footer-col h4 {
+.footer-heading {
   font-family: var(--font-mono);
   font-size: var(--fs-label);
   text-transform: uppercase;
