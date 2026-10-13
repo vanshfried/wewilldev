@@ -44,6 +44,10 @@
   transition: color 0.15s var(--ease);
   position: relative;
 }
+.main-nav .btn-primary,
+.mobile-nav .btn-primary {
+  color: var(--bg);
+}
 .main-nav a:hover,
 .main-nav a.is-active {
   color: var(--ink);
