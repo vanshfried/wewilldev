@@ -2,18 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-    window.addEventListener('load', function () {
-      var j = document.createElement('script');
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MFSFBFQB';
-      document.head.appendChild(j);
-    }, { once: true });
-  </script>
-  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WeWillDev — Web, App &amp; AI Development Studio | Based in Jammu, India</title>
@@ -25,10 +13,6 @@
     content="A technology studio for websites, apps, AI automation and custom software. Based in Jammu, serving businesses across India.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://wewilldev.com/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link id="site-fonts" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/layout.css">
   <link rel="stylesheet" href="/assets/css/components.css">
@@ -37,10 +21,6 @@
 </head>
 
 <body data-nav="home">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFSFBFQB" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
   <header id="site-header" class="site-header"></header>
 
   <main>
@@ -70,12 +50,15 @@
               businesses across India</p>
           </div>
           <div style="grid-column: 7 / 13;">
-            <div class="image-frame">
-              <img src="/assets/images/firstimage-960.jpg"
-                srcset="/assets/images/firstimage-640.jpg 640w, /assets/images/firstimage-960.jpg 960w, /assets/images/firstimage.jpg 1349w"
-                sizes="(max-width: 768px) calc(100vw - 40px), 50vw"
-                alt="Abstract composition of a dashboard and mobile app interface representing a web and app build"
-                width="1349" height="1166" loading="eager" fetchpriority="high" decoding="async">
+            <div class="image-frame hero-media">
+              <picture>
+                <source media="(max-width: 768px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+                <img src="/assets/images/firstimage-960.jpg"
+                  srcset="/assets/images/firstimage-640.jpg 640w, /assets/images/firstimage-960.jpg 960w, /assets/images/firstimage.jpg 1349w"
+                  sizes="50vw"
+                  alt="Abstract composition of a dashboard and mobile app interface representing a web and app build"
+                  width="1349" height="1166" loading="eager" fetchpriority="high" decoding="async">
+              </picture>
             </div>
           </div>
         </div>
