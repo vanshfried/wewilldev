@@ -13,15 +13,39 @@
     content="A technology studio for websites, apps, AI automation and custom software. Based in Jammu, serving businesses across India.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://wewilldev.com/">
-  <link rel="stylesheet" href="/assets/css/base.css">
-  <link rel="stylesheet" href="/assets/css/layout.css">
-  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="icon" href="/assets/images/favicon-64.png" type="image/png">
-  <link rel="stylesheet" href="/assets/css/responsive.css">
 </head>
 
 <body data-nav="home">
-  <header id="site-header" class="site-header"></header>
+  <header id="site-header" class="site-header" data-static-header>
+    <div class="container">
+      <a href="/" class="logo">wewilldev<span>.</span></a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/work/">Work</a></li>
+          <li><a href="/process/">Process</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+        <a href="https://wa.me/919149501021?text=Hi%20WeWillDev%2C%20I%27d%20like%20to%20discuss%20a%20project."
+          class="btn btn-primary" target="_blank" rel="noopener">Start a project â†—</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/process/">Process</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+      <a href="https://wa.me/919149501021?text=Hi%20WeWillDev%2C%20I%27d%20like%20to%20discuss%20a%20project."
+        class="btn btn-primary" target="_blank" rel="noopener">Start a project â†—</a>
+    </div>
+  </header>
 
   <main>
 

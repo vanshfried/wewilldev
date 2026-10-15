@@ -23,6 +23,11 @@ function renderHeader() {
   const header = document.getElementById("site-header");
   if (!header) return;
 
+  if (header.hasAttribute("data-static-header")) {
+    bindHeaderNavigation(header);
+    return;
+  }
+
   header.innerHTML = `
     <div class="container">
       <a href="/" class="logo">wewilldev<span>.</span></a>
@@ -44,8 +49,14 @@ function renderHeader() {
     </div>
   `;
 
-  const toggle = document.getElementById("navToggle");
-  const mobileNav = document.getElementById("mobileNav");
+  bindHeaderNavigation(header);
+}
+
+function bindHeaderNavigation(header) {
+  const toggle = header.querySelector("#navToggle");
+  const mobileNav = header.querySelector("#mobileNav");
+  if (!toggle || !mobileNav) return;
+
   toggle.addEventListener("click", () => {
     const open = mobileNav.classList.toggle("is-open");
     document.body.classList.toggle("nav-open", open);
